@@ -1,3 +1,50 @@
-body {
+.mainStructure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+.nav, .mainBody, .footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav, .footer {
     background-color: red;
+}
+.mainBody {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "top"
+    "bottom";
+}
+.topMainBody {
+    grid-area: top;
+}
+.bottomMainBody {
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 3%;
+}
+.bottomBox {
+    min-height: 100px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tall {
+    grid-row: span 2;
 }
