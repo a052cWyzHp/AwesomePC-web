@@ -1,50 +1,87 @@
-.mainStructure {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 100vh;
+.bg-myOrange {
+    background-color: #FF9F43;
 }
-.nav, .mainBody, .footer {
+
+.text-myOrange {
+    color: #FF9F43;
+}
+
+.btn-myOrange {
+    background-color: #FF9F43;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 2px solid transparent;
 }
-.nav, .footer {
-    background-color: red;
+
+.btn-myOrange:hover {
+    background-color: transparent;
+    color: #FF9F43;
+    border: 2px solid #FF9F43;
 }
-.mainBody {
-    background-color: blue;
+
+
+.animated-link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.animated-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0; 
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+}
+.animated-link:hover::after { 
+    width: 100%; 
+}
+
+.mainPage-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "top"
-    "bottom";
+    gap: 20px;
 }
-.topMainBody {
-    grid-area: top;
+
+.mainPage-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
 }
-.bottomMainBody {
-    grid-area: bottom;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    padding: 3%;
+
+.box-large {
+    grid-column: span 2;
 }
-.bottomBox {
-    min-height: 100px;
-    background-color: white;
-    color: black;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media (min-width: 768px) {
+    .mainPage-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px;
+    }
+
+    .box-large {
+        grid-column: 1;
+        grid-row: span 2;
+    }
 }
-.tall {
-    grid-row: span 2;
+
+.product-card {
+    position: relative;
+}
+
+.product-img {
+    transition: transform 0.4s ease;
+}
+
+
+.product-text {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.1);
+}
+
+.product-card:hover .product-text {
+    transform: translateY(-10px);
 }
