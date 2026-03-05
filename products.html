@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomePC - Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="breakpoint.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-sm bg-myOrange navbar-dark py-sm-4">
+    <div class="container">
+        <a href="index.html" class="navbar-brand fs-3 fw-bold">AwesomePC</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link fs-2"><i class="bi bi-cart-fill"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="misc.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="misc.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid d-sm-flex d-none" style="margin: 3rem 0">
+    <div class="row gap-3">
+        <div class="col-3 bg-myMuteOrange">
+            <p class="text-center fs-3">Filters</p>
+            <form>
+            <div class="form-check text-warning fs-5">
+                <input type="radio" name="rating" value="5" id="5star" class="form-check-input">
+                <label for="5star" class="form-check-label"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></label>
+            </div>
+            <div class="form-check text-warning fs-5">
+                <input type="radio" name="rating" value="4" id="4star" class="form-check-input">
+                <label for="4star" class="form-check-label"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></label>
+            </div>
+            <div class="form-check text-warning fs-5">
+                <input type="radio" name="rating" value="3" id="3star" class="form-check-input">
+                <label for="3star" class="form-check-label"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></label>
+            </div>
+            <div class="form-check text-warning fs-5">
+                <input type="radio" name="rating" value="2" id="2star" class="form-check-input">
+                <label for="2star" class="form-check-label"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></label>
+            </div>
+            <div class="form-check text-warning fs-5">
+                <input type="radio" name="rating" value="1" id="1star" class="form-check-input">
+                <label for="1star" class="form-check-label"><i class="bi bi-star-fill"></i></label>
+            </div>
+            <hr style="border: none; border: 1px solid black; margin: 20px auto; width:75%" class="opacity-100">
+            <div class="form-check fs-5">
+                <input class="form-check-input" type="checkbox" value="" id="ncr">
+                <label class="form-check-label" for="ncr">
+                    NCR
+                </label>
+            </div>
+            <div class="form-check fs-5">
+                <input class="form-check-input" type="checkbox" value="" id="luzon">
+                <label class="form-check-label" for="luzon">
+                    Luzon
+                </label>
+            </div>
+            <div class="form-check fs-5">
+                <input class="form-check-input" type="checkbox" value="" id="visayas">
+                <label class="form-check-label" for="visayas">
+                    Visayas
+                </label>
+            </div>
+            <div class="form-check fs-5">
+                <input class="form-check-input" type="checkbox" value="" id="mindanao">
+                <label class="form-check-label" for="mindanao">
+                    Mindanao
+                </label>
+            </div>
+            <div class="form-check fs-5">
+                <input class="form-check-input" type="checkbox" value="" id="overseas">
+                <label class="form-check-label" for="overseas">
+                    Overseas
+                </label>
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-myOrange rounded-pill fs-6 my-lg-4 w-auto">Apply Filters</button>
+            </div>
+            </form>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col-3">
+                    <a href="productdetails.html" class="card border-0 text-decoration-none text-dark" style="height: 500px;">
+                        <div class="border border-secondary-subtle p-2 mb-3 flex-grow-1 d-flex align-items-center">
+                            <div class="ratio ratio-1x1 d-flex align-items-center">
+                                <img src="assets/gpu.png" class="object-fit-cover">
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                            <span class="fs-5">PHP 99</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="productdetails.html" class="card border-0 text-decoration-none text-dark" style="height: 500px;">
+                        <div class="border border-secondary-subtle p-2 mb-3 flex-grow-1 d-flex align-items-center">
+                            <div class="ratio ratio-1x1 d-flex align-items-center">
+                                <img src="assets/gpu.png" class="object-fit-cover">
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                            <span class="fs-5">PHP 99</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="productdetails.html" class="card border-0 text-decoration-none text-dark" style="height: 500px;">
+                        <div class="border border-secondary-subtle p-2 mb-3 flex-grow-1 d-flex align-items-center">
+                            <div class="ratio ratio-1x1 d-flex align-items-center">
+                                <img src="assets/gpu.png" class="object-fit-cover">
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                            <span class="fs-5">PHP 99</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="productdetails.html" class="card border-0 text-decoration-none text-dark" style="height: 500px;">
+                        <div class="border border-secondary-subtle p-2 mb-3 flex-grow-1 d-flex align-items-center">
+                            <div class="ratio ratio-1x1 d-flex align-items-center">
+                                <img src="assets/gpu.png" class="object-fit-cover">
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                            <span class="fs-5">PHP 99</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main class="d-sm-none d-inline">
+    <div class="d-flex justify-content-center align-items-center bg-myMuteOrange align-items-center py-3">
+        <div class="d-flex gap-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Ratings
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-warning" href="#"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></a></li>
+                    <li><a class="dropdown-item text-warning" href="#"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></a></li>
+                    <li><a class="dropdown-item text-warning" href="#"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></a></li>
+                    <li><a class="dropdown-item text-warning" href="#"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></a></li>
+                    <li><a class="dropdown-item text-warning" href="#"><i class="bi bi-star-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Ratings
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">NCR</a></li>
+                    <li><a class="dropdown-item" href="#">Luzon</a></li>
+                    <li><a class="dropdown-item" href="#">Visayas</a></li>
+                    <li><a class="dropdown-item" href="#">Mindanao</a></li>
+                    <li><a class="dropdown-item" href="#">Overseas</a></li>
+                </ul>
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-myOrange rounded-pill fs-6 my-lg-4 w-auto">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+    <div class="row p-5 bg-myGray">
+        <div class="col-6" style="margin-bottom: 5%;">
+            <a href="productdetails.html" class="card border-0 rounded-5 text-decoration-none text-dark shadow">
+                <div class="p-2 mb-3 d-flex align-items-center">
+                    <div class="ratio ratio-1x1 d-flex align-items-center">
+                        <img src="assets/gpu.png" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                    <span class="fs-5">PHP 99</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-6" style="margin-bottom: 5%;">
+            <a href="productdetails.html" class="card border-0 rounded-5 text-decoration-none text-dark shadow">
+                <div class="p-2 mb-3 d-flex align-items-center">
+                    <div class="ratio ratio-1x1 d-flex align-items-center">
+                        <img src="assets/gpu.png" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                    <span class="fs-5">PHP 99</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-6" style="margin-bottom: 5%;">
+            <a href="productdetails.html" class="card border-0 rounded-5 text-decoration-none text-dark shadow">
+                <div class="p-2 mb-3 d-flex align-items-center">
+                    <div class="ratio ratio-1x1 d-flex align-items-center">
+                        <img src="assets/gpu.png" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                    <span class="fs-5">PHP 99</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-6" style="margin-bottom: 5%;">
+            <a href="productdetails.html" class="card border-0 rounded-5 text-decoration-none text-dark shadow">
+                <div class="p-2 mb-3 d-flex align-items-center">
+                    <div class="ratio ratio-1x1 d-flex align-items-center">
+                        <img src="assets/gpu.png" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                    <span class="fs-5">PHP 99</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-6" style="margin-bottom: 5%;">
+            <a href="productdetails.html" class="card border-0 rounded-5 text-decoration-none text-dark shadow">
+                <div class="p-2 mb-3 d-flex align-items-center">
+                    <div class="ratio ratio-1x1 d-flex align-items-center">
+                        <img src="assets/gpu.png" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                    <span class="fs-5">PHP 99</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-6" style="margin-bottom: 5%;">
+            <a href="productdetails.html" class="card border-0 rounded-5 text-decoration-none text-dark shadow">
+                <div class="p-2 mb-3 d-flex align-items-center">
+                    <div class="ratio ratio-1x1 d-flex align-items-center">
+                        <img src="assets/gpu.png" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h5 class="fw-normal">NVIDIA RTX 5090 GPU OC</h5>
+                    <span class="fs-5">PHP 99</span>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</main>
+
+<footer class="bg-myOrange text-white" style="padding-top: 25px;">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-12 mb-sm-0 mb-5">
+                    <a href="index.html" class="text-decoration-none text-white fs-2 fw-bold m-0">AwesomePC</a>
+                    <a href="misc.html" class="text-decoration-none text-white animated-link">Terms of Service</a>
+                    <a href="misc.html" class="text-decoration-none text-white animated-link">Privacy Policy</a>
+                    <a href="misc.html" class="text-decoration-none text-white animated-link">Refund Policy</a>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-4">
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">About us</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Help Center</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Partnerships</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Customer Support</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Manufacturers</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Site Settings</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Careers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: none; border: 1px solid white; margin: 20px auto; width:75%" class="opacity-100">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="">©2026 AwesomePC, Inc. All Rights Reserved</p>
+            </div>
+            <div class="col text-end">
+                <a href="#" class="text-decoration-none text-white me-2"><i href="#" class="bi bi-twitter fs-2"></i></a>
+                <a href="#" class="text-decoration-none text-white me-2"><i class="bi bi-instagram fs-2"></i></a>
+                <a href="#" class="text-decoration-none text-white"><i class="bi bi-facebook fs-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

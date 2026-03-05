@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomePC - Checkout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="breakpoint.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-sm bg-myOrange navbar-dark py-sm-4">
+    <div class="container">
+        <a href="index.html" class="navbar-brand fs-3 fw-bold">AwesomePC</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link fs-2"><i class="bi bi-cart-fill"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="misc.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="misc.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="d-none d-sm-block flex-grow-1">
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-sm-8" id="desktop-cart-list">
+                <div class="row bg-myMuteOrange mb-3">
+                    <div class="col-1 d-flex justify-content-center">
+                        <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        NVIDIA RTX 5090 GPU OC
+                        <span class="ms-auto">PHP999.00</span>
+                    </div>
+                </div>
+
+                <div class="row bg-myMuteOrange mb-3">
+                    <div class="col-1 d-flex justify-content-center">
+                        <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        NVIDIA RTX 5090 GPU OC
+                        <span class="ms-auto">PHP999.00</span>
+                    </div>
+                </div>
+
+                <div class="row bg-myMuteOrange mb-3">
+                    <div class="col-1 d-flex justify-content-center">
+                        <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        NVIDIA RTX 5090 GPU OC
+                        <span class="ms-auto">PHP999.00</span>
+                    </div>
+                </div>
+
+                <div class="row bg-myMuteOrange mb-3">
+                    <div class="col-1 d-flex justify-content-center">
+                        <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        NVIDIA RTX 5090 GPU OC
+                        <span class="ms-auto">PHP999.00</span>
+                    </div>
+                </div>
+
+                <div class="row bg-myMuteOrange mb-3">
+                    <div class="col-1 d-flex justify-content-center">
+                        <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+                    </div>
+                    <div class="col-3 d-flex justify-content-center">
+                        <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        NVIDIA RTX 5090 GPU OC
+                        <span class="ms-auto">PHP999.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="bg-myMuteOrange d-flex flex-column h-100 p-4">
+                    <div id="desktop-summary-items">
+                        <!-- checked items go here -->
+                    </div>
+                    <div class="mt-auto">
+                        <hr style="border: none; border: 1px solid rgb(0, 0, 0); margin: 20px auto; width:100%" class="opacity-100">
+                        <div class="d-flex justify-content-between my-3">
+                            Total
+                            <span id="desktop-total">PHP 0</span>
+                        </div>
+                        <button class="btn btn-myOrange rounded-pill w-100 fs-5">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main class="d-block d-sm-none flex-grow-1">
+    <div class="container-fluid py-3" id="mobile-cart-list">
+        <div class="row bg-myMuteOrange mb-3 mx-1 p-3 rounded-3">
+            <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox-mobile" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-8 d-flex flex-column">
+                <span class="fw-bold">NVIDIA RTX 5090 GPU OC</span><br>
+                PHP999.00
+            </div>
+        </div>
+
+        <div class="row bg-myMuteOrange mb-3 mx-1 p-3 rounded-3">
+            <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox-mobile" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-8 d-flex flex-column">
+                <span class="fw-bold">NVIDIA RTX 5090 GPU OC</span><br>
+                PHP999.00
+            </div>
+        </div>
+
+        <div class="row bg-myMuteOrange mb-3 mx-1 p-3 rounded-3">
+            <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox-mobile" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-8 d-flex flex-column">
+                <span class="fw-bold">NVIDIA RTX 5090 GPU OC</span><br>
+                PHP999.00
+            </div>
+        </div>
+
+        <div class="row bg-myMuteOrange mb-3 mx-1 p-3 rounded-3">
+            <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox-mobile" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-8 d-flex flex-column">
+                <span class="fw-bold">NVIDIA RTX 5090 GPU OC</span><br>
+                PHP999.00
+            </div>
+        </div>
+
+        <div class="row bg-myMuteOrange mb-3 mx-1 p-3 rounded-3">
+            <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox-mobile" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-8 d-flex flex-column">
+                <span class="fw-bold">NVIDIA RTX 5090 GPU OC</span><br>
+                PHP999.00
+            </div>
+        </div>
+
+        <div class="row bg-myMuteOrange mb-3 mx-1 p-3 rounded-3">
+            <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox-mobile" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-8 d-flex flex-column">
+                <span class="fw-bold">NVIDIA RTX 5090 GPU OC</span><br>
+                PHP999.00
+            </div>
+        </div>
+
+        <div class="row bg-myMuteOrange mb-3 mx-1 p-3 rounded-3">
+            <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" style="transform: scale(1.5);" class="cart-checkbox-mobile" data-price="999" data-name="NVIDIA RTX 5090 GPU OC">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <img src="assets/gpu.png" class="img-thumbnail img-fluid">
+            </div>
+            <div class="col-8 d-flex flex-column">
+                <span class="fw-bold">NVIDIA RTX 5090 GPU OC</span><br>
+                PHP999.00
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center sticky-top p-3 border-top z-3 bg-white gap-3" style="bottom: 0;">
+        <input style="transform: scale(1.5);" type="checkbox" id="select-all-mobile">
+        <label class="fs-5" for="select-all-mobile">All</label>
+        <span class="fs-5 ms-auto" id="mobile-total">PHP 0</span>
+        <button class="btn btn-myOrange rounded-pill fs-5">Checkout</button>
+    </div>
+</main>
+
+<footer class="bg-myOrange text-white" style="padding-top: 25px;">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-12 mb-sm-0 mb-5">
+                    <a href="index.html" class="text-decoration-none text-white fs-2 fw-bold m-0">AwesomePC</a>
+                    <a href="misc.html" class="text-decoration-none text-white animated-link">Terms of Service</a>
+                    <a href="misc.html" class="text-decoration-none text-white animated-link">Privacy Policy</a>
+                    <a href="misc.html" class="text-decoration-none text-white animated-link">Refund Policy</a>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-4">
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">About us</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Help Center</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Partnerships</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Customer Support</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Manufacturers</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Site Settings</a>
+                        </div>
+                        <div class="col">
+                            <a href="misc.html" class="text-decoration-none text-white animated-link">Careers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: none; border: 1px solid white; margin: 20px auto; width:75%" class="opacity-100">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="">©2026 AwesomePC, Inc. All Rights Reserved</p>
+            </div>
+            <div class="col text-end">
+                <a href="#" class="text-decoration-none text-white me-2"><i href="#" class="bi bi-twitter fs-2"></i></a>
+                <a href="#" class="text-decoration-none text-white me-2"><i class="bi bi-instagram fs-2"></i></a>
+                <a href="#" class="text-decoration-none text-white"><i class="bi bi-facebook fs-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    // for desktop
+    const desktopCheckboxes = document.querySelectorAll('.cart-checkbox');
+    const desktopSummaryItems = document.getElementById('desktop-summary-items');
+    const desktopTotal = document.getElementById('desktop-total');
+
+    function updateDesktop() {
+        let total = 0;
+        desktopSummaryItems.innerHTML = '';
+
+        desktopCheckboxes.forEach(cb => {
+            if (cb.checked) {
+                const price = parseInt(cb.dataset.price);
+                const name  = cb.dataset.name;
+                total += price;
+
+                const row = document.createElement('div');
+                row.className = 'summary-item d-flex';
+                row.innerHTML = `<span class="fs-6">${name}</span><span class="fs-6 ms-auto">PHP ${price.toLocaleString()}</span>`;
+                desktopSummaryItems.appendChild(row);
+            }
+        });
+
+        desktopTotal.textContent = 'PHP ' + total.toLocaleString();
+    }
+
+    desktopCheckboxes.forEach(cb => cb.addEventListener('change', updateDesktop));
+    updateDesktop();
+
+    // for mobile
+    const mobileCheckboxes = document.querySelectorAll('.cart-checkbox-mobile');
+    const mobileTotal      = document.getElementById('mobile-total');
+    const selectAllMobile  = document.getElementById('select-all-mobile');
+
+    function updateMobile() {
+        let total = 0;
+        let checkedCount = 0;
+
+        mobileCheckboxes.forEach(cb => {
+            if (cb.checked) {
+                total += parseInt(cb.dataset.price);
+                checkedCount++;
+            }
+        });
+
+        mobileTotal.textContent = 'PHP ' + total.toLocaleString();
+
+        // Keep "All" checkbox in sync
+        selectAllMobile.checked = checkedCount === mobileCheckboxes.length;
+        selectAllMobile.indeterminate = checkedCount > 0 && checkedCount < mobileCheckboxes.length;
+    }
+
+    mobileCheckboxes.forEach(cb => cb.addEventListener('change', updateMobile));
+
+    selectAllMobile.addEventListener('change', function () {
+        mobileCheckboxes.forEach(cb => { cb.checked = this.checked; });
+        updateMobile();
+    });
+
+    updateMobile();
+</script>
+</body>
+</html>
