@@ -1,2 +1,2 @@
 # AwesomePC-web
-it-307 web dev project
+IT-307 project developed with Bootstrap. Designed in Figma.
